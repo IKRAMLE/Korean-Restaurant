@@ -5,7 +5,7 @@ import { ArrowRight, Star, Users, Clock } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden mt-">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden h-220">
       {/* Animated Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-gray-800"></div>
 
@@ -26,15 +26,14 @@ const Hero = () => {
 
       <div className="relative z-10 text-center text-white px-4 max-w-6xl mx-auto mt-15">
         <div className="mb-8">
-
           <h1 
-            className="font-[Oswald,sans-serif] text-[96px] leading-[134.4px] font-medium tracking-normal mb-8 text-white"
+            className="font-[Oswald,sans-serif] text-4xl sm:text-6xl md:text-8xl lg:text-[96px] leading-tight sm:leading-[134.4px] font-medium tracking-normal mb-8 text-white"
           >
             Where Every Bite Tells a Korean Story
           </h1>
 
           <p 
-            className="font-['Source_Sans_Pro',sans-serif] text-[20px] leading-[28.05px] font-normal tracking-normal mb-12 max-w-3xl mx-auto text-white"
+            className="font-['Source_Sans_Pro',sans-serif] text-base sm:text-lg md:text-xl lg:text-[20px] leading-relaxed sm:leading-[28.05px] font-normal tracking-normal mb-12 max-w-3xl mx-auto text-white"
           >
             Experience the authentic flavors of Korea through our traditional recipes, 
             modern presentation, and warm hospitality that makes every meal unforgettable.
@@ -43,13 +42,13 @@ const Hero = () => {
 
         {/* Stats */}
         <div className="flex flex-wrap justify-center gap-8 mb-12">
-
+          {/* Add your stats here if needed */}
         </div>
 
         <div className="flex flex-col sm:flex-row gap-6 justify-center">
           <Button
             size="lg"
-            className="relative overflow-hidden bg-gradient-to-r from-orange-500 via-red-500 to-red-700 text-white px-10 py-4 text-lg font-bold rounded-full shadow-lg border-none group focus:outline-none focus:ring-4 focus:ring-orange-300 transition-all duration-300 hover:from-red-600 hover:to-orange-500 hover:scale-105"
+            className="relative overflow-hidden bg-gradient-to-r from-red-700 via-red-600 to-black text-white px-8 sm:px-10 md:px-12 py-4 sm:py-5 text-base sm:text-lg md:text-xl font-bold rounded-full shadow-lg border-none group focus:outline-none focus:ring-4 focus:ring-red-400 transition-all duration-300 hover:from-black hover:to-red-700 hover:scale-105"
           >
             <span className="relative z-10 flex items-center">
               Reserve Your Table
@@ -60,15 +59,13 @@ const Hero = () => {
           <Button
             size="lg"
             variant="outline"
-            className="relative overflow-hidden border-2 border-white/60 text-white px-10 py-4 text-lg font-bold rounded-full backdrop-blur-md bg-white/10 hover:bg-white/30 hover:text-red-700 hover:border-red-400 shadow-md focus:outline-none focus:ring-4 focus:ring-orange-300 transition-all duration-300 group"
+            className="relative overflow-hidden border-2 border-white/60 text-white px-8 sm:px-10 md:px-12 py-4 sm:py-5 text-base sm:text-lg md:text-xl font-bold rounded-full backdrop-blur-md bg-white/10 hover:bg-white/30 hover:text-red-700 hover:border-red-400 shadow-md focus:outline-none focus:ring-4 focus:ring-red-300 transition-all duration-300 group"
           >
             <span className="relative z-10">Explore Menu</span>
             <span className="absolute inset-0 opacity-0 group-hover:opacity-10 bg-white transition-opacity duration-300 rounded-full"></span>
           </Button>
         </div>
       </div>
-
-    
     </section>
   );
 };
